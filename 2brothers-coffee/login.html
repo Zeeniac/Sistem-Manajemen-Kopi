@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="id" id="html-root">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>2Brother's Coffee | Login to Your Account</title>
+    <meta
+      name="description"
+      content="Login to your 2Brother's Coffee account to track orders, request samples, and manage your profile."
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!-- Login Container (no navbar for clean auth page) -->
+    <div class="login-container">
+      <div class="login-card">
+        <!-- Logo -->
+        <div class="login-logo">
+          <h2>2Brother's<span>Coffee</span></h2>
+          <p>Premium Green Beans Export</p>
+        </div>
+
+        <!-- Login Form -->
+        <form id="loginForm" class="login-form">
+          <div id="loginError" class="login-error">
+            <i class="fas fa-exclamation-circle"></i> Invalid email or password
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <div class="input-icon">
+              <i class="fas fa-envelope"></i>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="you@example.com"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password</label>
+            <div class="input-icon">
+              <i class="fas fa-lock"></i>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter your password"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-options">
+            <label class="checkbox-label">
+              <input type="checkbox" id="rememberMe" />
+              <span>Remember me</span>
+            </label>
+            <a href="#" class="forgot-link">Forgot password?</a>
+          </div>
+
+          <button type="submit" class="btn-primary login-btn">
+            Sign In <i class="fas fa-arrow-right"></i>
+          </button>
+        </form>
+
+        <!-- Demo Credentials -->
+        <div class="demo-credentials">
+          <p>🔐 Demo Credentials</p>
+          <div class="credential-item">
+            <span class="credential-role">👑 Super Admin</span>
+            <span class="credential-value"
+              ><code>bro@2brothers.coffee</code> / <code>founder123</code></span
+            >
+          </div>
+          <div class="credential-item">
+            <span class="credential-role">👑 Super Admin</span>
+            <span class="credential-value"
+              ><code>co@2brothers.coffee</code> /
+              <code>cofounder123</code></span
+            >
+          </div>
+          <div class="credential-item">
+            <span class="credential-role">🔧 Admin</span>
+            <span class="credential-value"
+              ><code>admin@2brothers.coffee</code> / <code>admin123</code></span
+            >
+          </div>
+          <div class="credential-item">
+            <span class="credential-role">🛒 Buyer</span>
+            <span class="credential-value"
+              ><code>buyer@example.com</code> / <code>buyer123</code></span
+            >
+          </div>
+        </div>
+
+        <!-- Register Link -->
+        <div class="register-link">
+          <p>
+            Don't have an account?
+            <a href="contact.html">Contact us to register</a>
+          </p>
+        </div>
+
+        <!-- Back to Home -->
+        <div class="back-home">
+          <a href="index.html"
+            ><i class="fas fa-arrow-left"></i> Back to Home</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/core/config.js"></script>
+    <script src="js/pages/login.js"></script>
+  </body>
+</html>

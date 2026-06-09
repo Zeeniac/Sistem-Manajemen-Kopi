@@ -1,0 +1,44 @@
+{
+  "faq": [
+    {
+      "id": 1,
+      "question": "How long does shipping take?",
+      "answer": "Shipping time depends on destination. Asia: 7-14 days, USA/Canada: 21-30 days, Europe: 25-35 days, Middle East: 20-25 days, Australia: 14-21 days."
+    },
+    {
+      "id": 2,
+      "question": "What documents do you provide for export?",
+      "answer": "We provide complete export documentation: Bill of Lading, Commercial Invoice, Packing List, Certificate of Origin, Phytosanitary Certificate, and Fumigation Certificate (if required)."
+    },
+    {
+      "id": 3,
+      "question": "What are the payment terms?",
+      "answer": "We accept LC (Letter of Credit) at sight or TT (Telegraphic Transfer). Typically 30% deposit and 70% against shipping documents."
+    },
+    {
+      "id": 4,
+      "question": "Can I request a sample?",
+      "answer": "Yes! We provide 250gr sample per coffee type. Free of charge, buyer pays shipping fee."
+    },
+    {
+      "id": 5,
+      "question": "What is the minimum order quantity (MOQ)?",
+      "answer": "MOQ for green beans is 1 ton per type. For roasted beans, MOQ is 10kg per type."
+    },
+    {
+      "id": 6,
+      "question": "Do you have halal certification?",
+      "answer": "We are in the process of obtaining Halal certification. Our products are sourced from certified facilities and prepared following halal standards."
+    },
+    {
+      "id": 7,
+      "question": "What shipping terms do you offer?",
+      "answer": "We mainly offer FOB (Free on Board) from Belawan Port (Medan) or Tanjung Priok (Jakarta). CIF and other terms can be discussed."
+    },
+    {
+      "id": 8,
+      "question": "How do you ensure quality consistency?",
+      "answer": "Every batch is lab-tested for moisture content, defect count, and screen size. We also send samples to buyers for cupping before shipment."
+    }
+  ]
+}

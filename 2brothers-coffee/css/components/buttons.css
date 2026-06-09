@@ -1,0 +1,204 @@
+/* ============================================
+   2BROTHER'S COFFEE - BUTTON COMPONENTS
+   Premium CTA buttons with gold accent
+   ============================================ */
+
+/* Base button */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-6);
+  font-weight: var(--font-semibold);
+  font-size: var(--text-sm);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-base);
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+/* Primary Button (Gold) */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: var(--gold);
+  color: var(--black);
+  font-weight: 600;
+  padding: 12px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn-primary i {
+  transition: transform 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--gold-dark);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary:hover i {
+  transform: translateX(4px);
+}
+
+/* Outline Button */
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: transparent;
+  color: var(--gold);
+  font-weight: 600;
+  padding: 10px 26px;
+  border-radius: 8px;
+  text-decoration: none;
+  border: 2px solid var(--gold);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn-outline i {
+  transition: transform 0.3s ease;
+}
+
+.btn-outline:hover {
+  background-color: var(--gold);
+  color: var(--black);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.btn-outline:hover i {
+  transform: translateX(4px);
+}
+
+/* Solid Button (Royal Green) */
+.btn-solid {
+  background-color: var(--royal-green);
+  color: var(--white);
+}
+
+.btn-solid:hover {
+  background-color: var(--royal-green-light);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Ghost Button */
+.btn-ghost {
+  background-color: transparent;
+  color: var(--text-primary);
+}
+
+.btn-ghost:hover {
+  background-color: var(--bg-secondary);
+  color: var(--gold);
+}
+
+/* Small Button */
+.btn-sm {
+  padding: var(--space-2) var(--space-4);
+  font-size: var(--text-xs);
+}
+
+/* Large Button */
+.btn-lg {
+  padding: var(--space-4) var(--space-8);
+  font-size: var(--text-base);
+}
+
+/* Full width button */
+.btn-full {
+  width: 100%;
+}
+
+/* Disabled button */
+.btn:disabled,
+.btn.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Icon buttons */
+.btn-icon-only {
+  padding: var(--space-3);
+  border-radius: var(--radius-full);
+}
+
+/* WhatsApp floating button */
+.whatsapp-float {
+  position: fixed;
+  bottom: var(--space-6);
+  right: var(--space-6);
+  background-color: #25d366;
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-lg);
+  transition: all var(--transition-base);
+  z-index: var(--z-tooltip);
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  box-shadow: var(--shadow-xl);
+}
+
+.whatsapp-float i {
+  font-size: var(--text-2xl);
+  color: white;
+}
+
+/* Login button (navbar) */
+.btn-login {
+  background-color: transparent;
+  border: 1.5px solid var(--gold);
+  padding: var(--space-2) var(--space-5);
+  border-radius: var(--radius-full);
+  color: var(--gold);
+  font-weight: var(--font-medium);
+  transition: all var(--transition-fast);
+}
+
+.btn-login:hover {
+  background-color: var(--gold);
+  color: var(--black);
+  transform: none;
+}
+
+/* ===== DARK MODE BUTTON FIX ===== */
+[data-theme="dark"] .btn-primary {
+  background-color: var(--gold);
+  color: #0d1117; /* Lebih gelap dari hitam biasa */
+}
+
+[data-theme="dark"] .btn-primary:hover {
+  background-color: var(--gold-dark);
+}
+
+[data-theme="dark"] .btn-outline {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+[data-theme="dark"] .btn-outline:hover {
+  background-color: var(--gold);
+  color: #0d1117;
+}

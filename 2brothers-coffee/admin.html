@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="id" id="html-root">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>2Brother's Coffee | Admin Panel</title>
+    <meta
+      name="description"
+      content="Admin dashboard to manage orders, users, products, and messages."
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- Chart.js untuk Analytics -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="admin-wrapper">
+      <!-- Sidebar -->
+      <aside class="admin-sidebar" id="adminSidebar">
+        <div class="admin-sidebar-header">
+          <div class="admin-avatar">
+            <i class="fas fa-user-shield"></i>
+          </div>
+          <h4 class="admin-name" id="adminName">Admin User</h4>
+          <p class="admin-email" id="adminEmail">admin@2brothers.coffee</p>
+          <span class="admin-role">Administrator</span>
+        </div>
+        <nav class="admin-nav">
+          <a href="#" class="admin-nav-item active" data-page="dashboard">
+            <i class="fas fa-tachometer-alt"></i> Dashboard
+          </a>
+          <a href="#" class="admin-nav-item" data-page="orders">
+            <i class="fas fa-box"></i> Orders
+          </a>
+          <a href="#" class="admin-nav-item" data-page="users">
+            <i class="fas fa-users"></i> Users
+          </a>
+          <a href="#" class="admin-nav-item" data-page="products">
+            <i class="fas fa-coffee"></i> Products
+          </a>
+          <a href="#" class="admin-nav-item" data-page="messages">
+            <i class="fas fa-envelope"></i> Messages
+          </a>
+          <a href="#" class="admin-nav-item" data-page="team">
+            <i class="fas fa-user-friends"></i> Team
+          </a>
+          <a href="#" class="admin-nav-item" data-page="origin">
+            <i class="fas fa-map-marker-alt"></i> Origin Catalog
+          </a>
+          <a href="#" class="admin-nav-item" data-page="export">
+            <i class="fas fa-download"></i> Export Data
+          </a>
+        </nav>
+        <div class="admin-sidebar-footer">
+          <button
+            class="btn-outline logout-btn"
+            id="logoutBtn"
+            style="width: 100%"
+          >
+            <i class="fas fa-sign-out-alt"></i> Logout
+          </button>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="admin-main">
+        <div class="admin-header">
+          <h1 id="pageTitle">Admin Dashboard</h1>
+          <span class="admin-badge">Welcome back, Admin</span>
+        </div>
+        <div id="adminContent">
+          <div class="loading-spinner">
+            <i class="fas fa-spinner fa-spin"></i> Loading...
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <div class="mobile-admin-toggle" id="mobileAdminToggle">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    <script src="js/core/config.js"></script>
+    <script src="js/pages/admin.js"></script>
+  </body>
+</html>

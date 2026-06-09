@@ -1,0 +1,60 @@
+{
+  "origins": [
+    {
+      "id": 1,
+      "region": "Aceh",
+      "description": "Home to the famous Gayo Arabica, Aceh produces some of Indonesia's finest specialty coffee with complex flavor profiles.",
+      "altitude": "1200-1600 masl",
+      "flavor": "Herbal, spicy, heavy body, low acidity",
+      "varieties": "Tim Tim, Bor Bor, Ateng",
+      "process": "Wet Hulled (Giling Basah), Natural",
+      "image": "https://images.unsplash.com/photo-1558222218-5a4e7d3b6a8b?w=800&h=600&fit=crop",
+      "coordinates": {
+        "lat": 4.5,
+        "lng": 96.8
+      }
+    },
+    {
+      "id": 2,
+      "region": "North Sumatra",
+      "description": "The land of Mandheling and Lintong. Known for rich, full-bodied coffee with unique spicy notes.",
+      "altitude": "1100-1500 masl",
+      "flavor": "Clean, sweet, bright acidity, chocolate undertone",
+      "varieties": "Typica, Sigarar Utang, Jember",
+      "process": "Wet Hulled (Giling Basah)",
+      "image": "https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=800&h=600&fit=crop",
+      "coordinates": {
+        "lat": 2.1,
+        "lng": 98.8
+      }
+    },
+    {
+      "id": 3,
+      "region": "Lampung",
+      "description": "Indonesia's largest Robusta producing region. Bold, earthy character perfect for espresso blends.",
+      "altitude": "600-1000 masl",
+      "flavor": "Earthy, bold, nutty, low acidity, heavy body",
+      "varieties": "Robusta",
+      "process": "Wet Hulled",
+      "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=800&h=600&fit=crop",
+      "coordinates": {
+        "lat": -5.0,
+        "lng": 104.5
+      }
+    },
+    {
+      "id": 4,
+      "region": "East Java",
+      "description": "Known for Ijen plateau coffee. Clean profile with unique fruit notes.",
+      "altitude": "500-800 masl",
+      "flavor": "Nutty, chocolate, smooth, medium body",
+      "varieties": "Robusta, Typica",
+      "process": "Wet Hulled",
+      "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=800&h=600&fit=crop",
+      "coordinates": {
+        "lat": -7.5,
+        "lng": 112.6
+      }
+    }
+  ]
+}

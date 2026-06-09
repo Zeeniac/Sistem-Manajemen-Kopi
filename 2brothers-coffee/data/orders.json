@@ -1,0 +1,152 @@
+{
+  "orders": [
+    {
+      "orderId": "2BC-001",
+      "date": "2026-05-15",
+      "customerName": "PT Kopi Nusantara",
+      "customerEmail": "buyer@example.com",
+      "product": "Sumatra Mandheling G1",
+      "quantity": "2 tons",
+      "total": "$16,200",
+      "status": "shipped",
+      "trackingLink": "https://www.flightradar24.com/JAL35/3fcd57f0",
+      "shippingAddress": "Jakarta, Indonesia",
+      "notifications": [
+        {
+          "date": "2026-05-15",
+          "message": "Order confirmed",
+          "read": true
+        },
+        {
+          "date": "2026-05-17",
+          "message": "Quality check passed",
+          "read": true
+        },
+        {
+          "date": "2026-05-20",
+          "message": "Order has been shipped! Click link to track live",
+          "read": false
+        }
+      ],
+      "history": [
+        {
+          "date": "2026-05-15",
+          "status": "Order Confirmed",
+          "location": "Medan"
+        },
+        {
+          "date": "2026-05-17",
+          "status": "Quality Check",
+          "location": "Medan"
+        },
+        {
+          "date": "2026-05-20",
+          "status": "Shipping",
+          "location": "Belawan Port"
+        }
+      ]
+    },
+    {
+      "orderId": "2BC-002",
+      "date": "2026-05-10",
+      "customerName": "Roastery Indonesia",
+      "customerEmail": "buyer@example.com",
+      "product": "Gayo Arabica G1",
+      "quantity": "1 ton",
+      "total": "$8,200",
+      "status": "processing",
+      "trackingLink": "",
+      "shippingAddress": "Bandung, Indonesia",
+      "notifications": [
+        {
+          "date": "2026-05-10",
+          "message": "Order confirmed",
+          "read": true
+        },
+        {
+          "date": "2026-05-12",
+          "message": "Quality check in progress",
+          "read": false
+        }
+      ],
+      "history": [
+        {
+          "date": "2026-05-10",
+          "status": "Order Confirmed",
+          "location": "Medan"
+        },
+        {
+          "date": "2026-05-12",
+          "status": "Quality Check",
+          "location": "Medan"
+        }
+      ]
+    },
+    {
+      "orderId": "2BC-003",
+      "date": "2026-05-01",
+      "customerName": "Coffee Export Co",
+      "customerEmail": "buyer@example.com",
+      "product": "Sumatra Robusta G1",
+      "quantity": "5 tons",
+      "total": "$19,000",
+      "status": "delivered",
+      "trackingLink": "https://www.marinetraffic.com/en/ais/home/shipid:123456",
+      "shippingAddress": "Singapore",
+      "notifications": [
+        {
+          "date": "2026-05-01",
+          "message": "Order confirmed",
+          "read": true
+        },
+        {
+          "date": "2026-05-03",
+          "message": "Quality check passed",
+          "read": true
+        },
+        {
+          "date": "2026-05-06",
+          "message": "Order has been shipped!",
+          "read": true
+        },
+        {
+          "date": "2026-05-20",
+          "message": "Order arrived at destination port",
+          "read": true
+        },
+        {
+          "date": "2026-05-22",
+          "message": "Order delivered successfully! Please prepare for customs clearance",
+          "read": false
+        }
+      ],
+      "history": [
+        {
+          "date": "2026-05-01",
+          "status": "Order Confirmed",
+          "location": "Medan"
+        },
+        {
+          "date": "2026-05-03",
+          "status": "Quality Check",
+          "location": "Medan"
+        },
+        {
+          "date": "2026-05-06",
+          "status": "Shipping",
+          "location": "Belawan Port"
+        },
+        {
+          "date": "2026-05-20",
+          "status": "Arrived at Destination Port",
+          "location": "Singapore Port"
+        },
+        {
+          "date": "2026-05-22",
+          "status": "Delivered",
+          "location": "Buyer Warehouse"
+        }
+      ]
+    }
+  ]
+}

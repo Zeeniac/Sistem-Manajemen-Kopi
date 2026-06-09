@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="id" id="html-root">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>2Brother's Coffee | Premium Green Beans Export from Indonesia</title>
+    <meta
+      name="description"
+      content="Premium green beans and roasted coffee export from Indonesia. Direct trade from farm to port."
+    />
+
+    <!-- Favicon (optional, gak papa kalau belum ada) -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/images/icons/favicon.ico"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- MAIN CSS - PERHATIKAN PATH INI -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- Jika file main.css ada di folder css/, path ini sudah benar -->
+  </head>
+
+  <body>
+    <!-- Navbar Container (JS akan isi di sini) -->
+    <div id="navbar-container"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <span class="hero-badge" data-i18n="heroBadge"
+            >Premium Indonesian Coffee Exporter</span
+          >
+          <h1 data-i18n="heroTitle">Direct Trade.<br />Premium Quality.</h1>
+          <p data-i18n="heroDesc">
+            Green beans and roasted coffee from the finest farms in Sumatra,
+            Aceh, and Java. Export-grade quality with full traceability.
+          </p>
+          <div class="hero-buttons">
+            <!-- Tombol Request Sample dengan icon panah -->
+            <a href="contact.html" class="btn-primary">
+              Request Sample <i class="fas fa-arrow-right"></i>
+            </a>
+            <!-- Tombol View Products -->
+            <a href="coffee.html" class="btn-outline"> View Products </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+      <div class="container">
+        <div class="stats-grid">
+          <div>
+            <div class="stat-number">19+</div>
+            <div class="stat-label" data-i18n="statsTons">Tons Exported</div>
+          </div>
+          <div>
+            <div class="stat-number">5+</div>
+            <div class="stat-label" data-i18n="statsCountries">Countries</div>
+          </div>
+          <div>
+            <div class="stat-number">12+</div>
+            <div class="stat-label" data-i18n="statsBuyers">Happy Buyers</div>
+          </div>
+          <div>
+            <div class="stat-number">100%</div>
+            <div class="stat-label" data-i18n="statsQuality">
+              Quality Guarantee
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section class="why-us">
+      <div class="container">
+        <div class="section-header">
+          <h2 data-i18n="whyTitle">Why Choose Us</h2>
+          <p data-i18n="whyDesc">
+            We deliver excellence from farm to port, ensuring the highest
+            quality standards for your business.
+          </p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-tractor"></i>
+            </div>
+            <h3 data-i18n="whyFarmTitle">Direct from Farm</h3>
+            <p data-i18n="whyFarmDesc">
+              No middlemen. We work directly with farmers to ensure fair prices
+              and consistent quality.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-flask"></i>
+            </div>
+            <h3 data-i18n="whyQualityTitle">Quality Control</h3>
+            <p data-i18n="whyQualityDesc">
+              Lab-tested for moisture, defects, and screen size. Every batch
+              meets export standards.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-ship"></i>
+            </div>
+            <h3 data-i18n="whyShippingTitle">Global Shipping</h3>
+            <p data-i18n="whyShippingDesc">
+              FOB from Belawan & Tanjung Priok. Fast documentation and reliable
+              logistics partners.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products">
+      <div class="container">
+        <div class="section-header">
+          <h2 data-i18n="productsTitle">Our Premium Selection</h2>
+          <p data-i18n="productsDesc">
+            Directly sourced from Indonesia's best coffee regions
+          </p>
+        </div>
+        <div class="products-grid" id="productsGrid">
+          <!-- Products will be loaded by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+      <div class="container">
+        <h2 data-i18n="ctaTitle">Ready to Source Premium Coffee?</h2>
+        <p data-i18n="ctaDesc">
+          Request a sample or get a quote for bulk orders. Our team is ready to
+          assist you.
+        </p>
+        <a href="contact.html" class="btn-primary" data-i18n="ctaBtn"
+          >Contact Us Today <i class="fas fa-arrow-right"></i
+        ></a>
+      </div>
+    </section>
+
+    <!-- Footer Container (JS akan isi di sini) -->
+    <div id="footer-container"></div>
+
+    <!-- WhatsApp Float Button -->
+    <a
+      href="https://wa.me/6281234567890"
+      class="whatsapp-float"
+      target="_blank"
+    >
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="js/core/config.js"></script>
+    <script src="js/components/navbar.js"></script>
+
+    <!-- Products Data -->
+    <script>
+      // Product data (will be moved to JSON later)
+      const products = [
+        {
+          id: 1,
+          name: "Sumatra Mandheling G1",
+          category: "Arabica",
+          price: "$8,100",
+          unit: "/ton FOB",
+          image:
+            "https://images.unsplash.com/photo-1559056199-5a47f60c5053?w=400&h=300&fit=crop",
+        },
+        {
+          id: 2,
+          name: "Gayo Arabica G1",
+          category: "Arabica",
+          price: "$8,200",
+          unit: "/ton FOB",
+          image:
+            "https://images.unsplash.com/photo-1564186763535-9bff1e6c8b16?w=400&h=300&fit=crop",
+        },
+        {
+          id: 3,
+          name: "Sumatra Robusta G1",
+          category: "Robusta",
+          price: "$3,800",
+          unit: "/ton FOB",
+          image:
+            "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=400&h=300&fit=crop",
+        },
+      ];
+
+      // Render products
+      function renderProducts() {
+        const grid = document.getElementById("productsGrid");
+        if (!grid) return;
+
+        grid.innerHTML = products
+          .map(
+            (product) => `
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('${product.image}');"></div>
+                    <div class="product-content">
+                        <div class="product-category">${product.category} G1</div>
+                        <h3 class="product-title">${product.name}</h3>
+                        <div class="product-price">${product.price}<small>${product.unit}</small></div>
+                        <button class="btn-sample" onclick="window.location.href='contact.html'">Request Sample</button>
+                    </div>
+                </div>
+            `,
+          )
+          .join("");
+      }
+
+      // Initialize when DOM is ready
+      document.addEventListener("DOMContentLoaded", () => {
+        renderProducts();
+      });
+    </script>
+  </body>
+</html>

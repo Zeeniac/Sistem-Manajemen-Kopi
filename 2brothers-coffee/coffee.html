@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="id" id="html-root">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>2Brother's Coffee | Our Premium Coffee Selection</title>
+    <meta
+      name="description"
+      content="Explore our premium green beans and roasted coffee collection. Sumatra Mandheling, Gayo Arabica, and more. Export quality with full traceability."
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!-- Navbar Container -->
+    <div id="navbar-container"></div>
+
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1 data-i18n="productsTitle">Our Premium Selection</h1>
+        <p data-i18n="productsDesc">
+          Directly sourced from Indonesia's best coffee regions
+        </p>
+      </div>
+    </section>
+
+    <!-- Filter Bar - STICKY -->
+    <section class="filter-bar" id="filterBar">
+      <div class="container">
+        <div class="filter-container">
+          <!-- Dropdown Filter untuk Green Beans / Roasted Beans -->
+          <div class="filter-group">
+            <select id="productTypeFilter" class="filter-select">
+              <option value="all">All Products</option>
+              <option value="green-beans">Green Beans</option>
+              <option value="roasted">Roasted Beans</option>
+            </select>
+          </div>
+          <!-- Filter Kategori (Arabika/Robusta) - hanya untuk green beans -->
+          <div class="filter-group" id="categoryFilterGroup">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="Arabika">Arabika</button>
+            <button class="filter-btn" data-filter="Robusta">Robusta</button>
+          </div>
+          <div class="results-count">
+            <span id="resultsCount">0</span> products found
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-page">
+      <div class="container">
+        <div class="products-grid" id="productsGrid">
+          <div class="loading-spinner">
+            <i class="fas fa-spinner fa-spin"></i> Loading products...
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Detail Modal -->
+    <div id="productModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 id="modalTitle">Product Details</h3>
+          <button class="modal-close" onclick="closeModal()">&times;</button>
+        </div>
+        <div class="modal-body" id="modalBody">
+          <!-- Content loaded by JS -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Container -->
+    <div id="footer-container"></div>
+
+    <!-- WhatsApp Float -->
+    <a
+      href="https://wa.me/6281234567890"
+      class="whatsapp-float"
+      target="_blank"
+    >
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="js/core/config.js"></script>
+    <script src="js/components/navbar.js"></script>
+    <script src="js/pages/coffee.js"></script>
+  </body>
+</html>

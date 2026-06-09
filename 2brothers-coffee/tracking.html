@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="id" id="html-root">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>2Brother's Coffee | Track Your Order</title>
+    <meta
+      name="description"
+      content="Track your coffee shipment order. Real-time status updates and delivery timeline."
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!-- Navbar Container -->
+    <div id="navbar-container"></div>
+
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1>Track Your Order</h1>
+        <p>Enter your Order ID to get real-time shipment status</p>
+      </div>
+    </section>
+
+    <!-- Tracking Section -->
+    <section class="tracking-section">
+      <div class="container">
+        <!-- Search Box -->
+        <div class="search-box">
+          <div class="search-input-group">
+            <input
+              type="text"
+              id="orderId"
+              placeholder="Enter Order ID (e.g., 2BC-001)"
+              autocomplete="off"
+            />
+            <button class="btn-primary" id="trackBtn">
+              Track Order <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Tracking Result -->
+        <div id="trackingResult" class="tracking-result">
+          <div class="empty-state">
+            <i class="fas fa-truck"></i>
+            <p>Enter an Order ID to track your shipment</p>
+            <p style="font-size: 14px; margin-top: 8px">
+              Available: 2BC-001, 2BC-002, 2BC-003
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Container -->
+    <div id="footer-container"></div>
+
+    <!-- WhatsApp Float -->
+    <a
+      href="https://wa.me/6281234567890"
+      class="whatsapp-float"
+      target="_blank"
+    >
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="js/core/config.js"></script>
+    <script src="js/components/navbar.js"></script>
+    <script src="js/pages/tracking.js"></script>
+  </body>
+</html>

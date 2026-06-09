@@ -1,0 +1,56 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Brother 1",
+      "email": "bro@2brothers.coffee",
+      "password": "founder123",
+      "role": "super_admin",
+      "status": "active",
+      "joined": "2026-05-01",
+      "company": "2Brother's Coffee",
+      "phone": "+62 812 3456 7890",
+      "address": "Medan, North Sumatra, Indonesia",
+      "taxId": "12.345.678.9-012.345"
+    },
+    {
+      "id": 2,
+      "name": "Brother 2",
+      "email": "co@2brothers.coffee",
+      "password": "cofounder123",
+      "role": "super_admin",
+      "status": "active",
+      "joined": "2026-05-01",
+      "company": "2Brother's Coffee",
+      "phone": "+62 812 3456 7891",
+      "address": "Medan, North Sumatra, Indonesia",
+      "taxId": "12.345.678.9-012.346"
+    },
+    {
+      "id": 3,
+      "name": "Admin User",
+      "email": "admin@2brothers.coffee",
+      "password": "admin123",
+      "role": "admin",
+      "status": "active",
+      "joined": "2026-05-01",
+      "company": "2Brother's Coffee",
+      "phone": "+62 812 3456 7892",
+      "address": "Medan, North Sumatra, Indonesia",
+      "taxId": ""
+    },
+    {
+      "id": 4,
+      "name": "Sample Buyer",
+      "email": "buyer@example.com",
+      "password": "buyer123",
+      "role": "buyer",
+      "status": "active",
+      "joined": "2026-05-10",
+      "company": "PT Kopi Nusantara",
+      "phone": "+62 812 3456 7893",
+      "address": "Jakarta, Indonesia",
+      "taxId": "98.765.432.1-098.765"
+    }
+  ]
+}

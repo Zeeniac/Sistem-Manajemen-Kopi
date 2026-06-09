@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="id" id="html-root">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>2Brother's Coffee | Buyer Dashboard</title>
+    <meta
+      name="description"
+      content="Manage your orders, track shipments, request samples, and view your profile."
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!-- Dashboard Wrapper -->
+    <div class="dashboard-wrapper">
+      <!-- Sidebar -->
+      <aside class="dashboard-sidebar" id="dashboardSidebar">
+        <div class="sidebar-header">
+          <div class="user-avatar">
+            <i class="fas fa-user"></i>
+          </div>
+          <h4 class="user-name" id="userName">Buyer Name</h4>
+          <p class="user-email" id="userEmail">buyer@example.com</p>
+        </div>
+        <nav class="sidebar-nav">
+          <a href="#" class="sidebar-nav-item active" data-page="overview">
+            <i class="fas fa-tachometer-alt"></i> Overview
+          </a>
+          <a href="#" class="sidebar-nav-item" data-page="orders">
+            <i class="fas fa-box"></i> My Orders
+          </a>
+          <a href="#" class="sidebar-nav-item" data-page="tracking">
+            <i class="fas fa-truck"></i> Track Order
+          </a>
+          <a href="#" class="sidebar-nav-item" data-page="sample">
+            <i class="fas fa-flask"></i> Request Sample
+          </a>
+          <a href="#" class="sidebar-nav-item" data-page="wishlist">
+            <i class="fas fa-heart"></i> Wishlist
+          </a>
+          <a href="#" class="sidebar-nav-item" data-page="notifications">
+            <i class="fas fa-bell"></i> Notifications
+            <span class="notification-badge" id="notificationBadge">0</span>
+          </a>
+          <a href="#" class="sidebar-nav-item" data-page="profile">
+            <i class="fas fa-user-circle"></i> My Profile
+          </a>
+          <a href="#" class="sidebar-nav-item" data-page="support">
+            <i class="fas fa-headset"></i> Support Ticket
+          </a>
+        </nav>
+        <div class="sidebar-footer">
+          <button class="btn-outline logout-btn" id="logoutBtn">
+            <i class="fas fa-sign-out-alt"></i> Logout
+          </button>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="dashboard-main">
+        <div class="dashboard-header">
+          <h1 id="pageTitle">Dashboard Overview</h1>
+          <span class="welcome-badge" id="welcomeBadge">Welcome back!</span>
+        </div>
+
+        <div id="pageContent">
+          <!-- Content will be loaded by JavaScript -->
+          <div class="loading-spinner">
+            <i class="fas fa-spinner fa-spin"></i> Loading...
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- Mobile Sidebar Toggle -->
+    <div class="mobile-sidebar-toggle" id="mobileSidebarToggle">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/core/config.js"></script>
+    <script src="js/pages/dashboard.js"></script>
+  </body>
+</html>

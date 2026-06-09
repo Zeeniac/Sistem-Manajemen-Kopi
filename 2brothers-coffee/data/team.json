@@ -1,0 +1,66 @@
+{
+  "team": [
+    {
+      "id": 1,
+      "name": "Brother 1",
+      "role": "Founder & Head of Export",
+      "bio": "10+ years in coffee export. Certified Q Grader with deep knowledge of Sumatran coffee origins. Passionate about bringing Indonesian coffee to the world.",
+      "image": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop",
+      "social": {
+        "linkedin": "https://linkedin.com/in/brother1",
+        "instagram": "https://instagram.com/brother1"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Brother 2",
+      "role": "Co-Founder & Quality Control",
+      "bio": "Supply chain expert ensuring smooth logistics from farm to port. Dedicated to building strong partnerships with local farmers.",
+      "image": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&h=400&fit=crop",
+      "social": {
+        "linkedin": "https://linkedin.com/in/brother2",
+        "instagram": "https://instagram.com/brother2"
+      }
+    }
+  ],
+  "farmers": [
+    {
+      "id": 1,
+      "name": "Koperasi Kopi Gayo",
+      "region": "Aceh Tengah",
+      "description": "Working together since 2020. 500+ farmers producing high-quality Arabica.",
+      "image": ""
+    },
+    {
+      "id": 2,
+      "name": "Kelompok Tani Lintong",
+      "region": "North Sumatra",
+      "description": "Partnership focused on sustainable farming practices and fair trade.",
+      "image": ""
+    },
+    {
+      "id": 3,
+      "name": "KUD Karya Makmur",
+      "region": "Lampung",
+      "description": "Robusta specialists with 200+ active farmers.",
+      "image": ""
+    }
+  ],
+  "communities": [
+    {
+      "id": 1,
+      "name": "Specialty Coffee Association of Indonesia (SCAI)",
+      "description": "Active member since 2021"
+    },
+    {
+      "id": 2,
+      "name": "Indonesia Coffee Exporters Association (ICE)",
+      "description": "Member since 2022"
+    },
+    {
+      "id": 3,
+      "name": "World Coffee Research",
+      "description": "Supporting coffee research and sustainability"
+    }
+  ]
+}

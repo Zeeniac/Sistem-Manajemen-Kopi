@@ -1,0 +1,184 @@
+/* ============================================
+   2BROTHER'S COFFEE - NAVBAR COMPONENT
+   Fixed navigation with blur effect
+   ============================================ */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--bg-navbar);
+  backdrop-filter: blur(12px);
+  z-index: var(--z-header);
+  padding: var(--space-4) 0;
+  border-bottom: 1px solid var(--border-color);
+  transition: all var(--transition-base);
+}
+
+.navbar-scrolled {
+  padding: var(--space-3) 0;
+  background-color: var(--bg-navbar);
+  border-bottom-color: var(--gold);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+}
+
+/* Logo */
+.logo {
+  font-size: var(--text-xl);
+  font-weight: var(--font-bold);
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+.logo span {
+  color: var(--gold);
+}
+
+/* Desktop Navigation */
+.nav-links {
+  display: flex;
+  gap: var(--space-8);
+  align-items: center;
+}
+
+.nav-links a {
+  color: var(--text-primary);
+  text-decoration: none;
+  font-weight: var(--font-medium);
+  transition: color var(--transition-fast);
+  position: relative;
+}
+
+.nav-links a:hover {
+  color: var(--gold);
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--gold);
+  transition: width var(--transition-base);
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Navbar Right Controls */
+.nav-controls {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+/* Toggle buttons (Dark Mode & Language) */
+.toggle-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: var(--space-2);
+  border-radius: var(--radius-full);
+  color: var(--text-primary);
+  font-size: var(--text-lg);
+  transition: all var(--transition-fast);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+}
+
+.toggle-btn:hover {
+  background-color: var(--bg-secondary);
+  color: var(--gold);
+}
+
+/* Language Switcher */
+.lang-switcher {
+  display: flex;
+  gap: var(--space-1);
+  background-color: var(--bg-secondary);
+  border-radius: var(--radius-full);
+  padding: var(--space-1);
+}
+
+.lang-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-full);
+  font-size: var(--text-xs);
+  font-weight: var(--font-medium);
+  color: var(--text-secondary);
+  transition: all var(--transition-fast);
+}
+
+.lang-btn.active {
+  background-color: var(--gold);
+  color: var(--black);
+}
+
+.lang-btn:hover:not(.active) {
+  color: var(--gold);
+}
+
+/* Mobile Menu Button */
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: var(--space-2);
+  color: var(--text-primary);
+  font-size: var(--text-xl);
+}
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 70px;
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 70px);
+    background-color: var(--bg-navbar);
+    backdrop-filter: blur(12px);
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--space-8);
+    transition: left var(--transition-base);
+    z-index: var(--z-dropdown);
+  }
+
+  .nav-links.active {
+    left: 0;
+  }
+
+  .nav-controls {
+    margin-left: auto;
+  }
+}
+
+/* ===== DARK MODE NAVBAR ===== */
+[data-theme="dark"] .navbar {
+  background: rgba(13, 17, 23, 0.95); /* Match dengan bg-primary dark */
+  border-bottom: 1px solid #2d3340;
+}
