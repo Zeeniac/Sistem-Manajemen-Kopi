@@ -90,7 +90,7 @@ Sistem-Manajemen-Kopi/
 ## 📫 Kontak
 
 - **GitHub:** [github.com/Zeeniac](https://github.com/Zeeniac)
-- **Email:** zeeniac@example.com
+- **Email:** rzkymttqn@gmail.com
 
 ---
 
