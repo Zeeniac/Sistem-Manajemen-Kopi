@@ -1,0 +1,40 @@
+# Sistem Operasi
+.DS_Store
+Thumbs.db
+*.exe
+*.dmg
+*.iso
+
+# Editor dan IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# File sementara
+*.tmp
+*.log
+*.cache
+*.temp
+
+# File sistem Windows
+desktop.ini
+$RECYCLE.BIN/
+
+# File Mac
+.AppleDouble
+.LSOverride
+
+# File proyek (opsional - sesuaikan)
+node_modules/
+*.zip
+*.rar
+*.7z
+
+# File rahasia
+.env
+*.pem
+*.key
+*.crt
